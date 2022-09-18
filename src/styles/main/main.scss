@@ -1,12 +1,12 @@
 .select {
   width: 100%;
-  background-image: url(/img/images/backgroundQuestion.png);
+  background-image: url('../img/images/backgroundQuestion.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
 
   &--down {
-    background-image: url(/img/images/backgroundQuestion.png);
+    background-image: url('../img/images/backgroundQuestion.png');
     transform: scale(-1, -1);
   }
 }
