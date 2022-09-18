@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Circe"), url(../fonts/Circe/Circe-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Circe"), url(../fonts/Circe/Circe-Bold.woff) format("woff");
+}
+
+@import "helpers";
+@import "variables";
+@import "header/header.scss";
+@import "main/main.scss";
+@import "footer/footer.scss";
+
+* {
+  box-sizing: border-box;
+
+  &:before {
+    box-sizing: border-box;
+  }
+
+  &:after {
+    box-sizing: border-box;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Circe-Regular", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  margin: 0;
+}

@@ -1,0 +1,209 @@
+.select {
+  width: 100%;
+  background-image: url(/img/images/backgroundQuestion.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &--down {
+    background-image: url(/img/images/backgroundQuestion.png);
+    transform: scale(-1, -1);
+  }
+}
+
+.select-wrapper {
+  padding-top: calc(var(--spacer) * 10);
+  padding-bottom: calc(var(--spacer) * 16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: calc(var(--spacer) * 4);
+  &--down {
+    transform: scale(-1, -1);
+    padding-top: calc(var(--spacer) * 10);
+    padding-bottom: calc(var(--spacer) * 10);
+  }
+}
+
+.select-question__text {
+  font-size: calc(var(--spacer) * 4);
+  font-weight: 700;
+  line-height: calc(var(--spacer) * 4);
+  color: var(--title-color);
+  max-width: 552px;
+  text-align: center;
+  @media screen and (max-width: 900px) {
+    padding: 0 calc(var(--spacer) * 4);
+  }
+}
+
+.select-question__text-down {
+  text-align: center;
+  @media screen and (max-width: 900px) {
+    padding: calc(var(--spacer) * 3) calc(var(--spacer) * 6);
+  }
+}
+
+.select-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: calc(var(--spacer) * 3);
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: calc(var(--spacer) * 3);
+  }
+  &__red {
+    @include btn(var(--color-red-light));
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    padding: calc(var(--spacer) * 1.5) calc(var(--spacer) * 7);
+    font-size: calc(var(--spacer) * 3);
+    display: flex;
+    align-items: center;
+    column-gap: var(--spacer);
+  }
+  &__blue {
+    @include btn(var(--color-blue-light));
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+    padding: calc(var(--spacer) * 1.5) calc(var(--spacer) * 7);
+    font-size: calc(var(--spacer) * 3);
+    display: flex;
+    align-items: center;
+  }
+}
+
+.benefits-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding-top: calc(var(--spacer) * 20);
+}
+
+.description-benefits {
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+  margin-top: calc(var(--spacer) * 9);
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: calc(var(--spacer) * 5);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+  }
+
+  &__item-img {
+    max-width: 180px;
+  }
+
+  &__item-numbers {
+    font-size: calc(var(--spacer) * 7);
+    font-weight: 700;
+    line-height: 61px;
+    color: var(--color-blue);
+  }
+
+  &__item-text {
+    font-size: calc(var(--spacer) * 3);
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--text-color-dark);
+    text-align: center;
+  }
+}
+
+.success-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding-top: calc(var(--spacer) * 20);
+  padding-bottom: calc(var(--spacer) * 20);
+}
+
+.success-stories {
+  margin-top: calc(var(--spacer) * 9);
+  display: flex;
+  flex-direction: column;
+  row-gap: calc(var(--spacer) * 9);
+}
+
+.success-stories-block {
+  display: flex;
+  align-items: center;
+  column-gap: calc(var(--spacer) * 7);
+  &--second {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+  .storie-foto {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.description-storie {
+  display: flex;
+  flex-direction: column;
+  max-width: 690px;
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(var(--spacer) * 2);
+  }
+  .highlight {
+    display: flex;
+    align-items: center;
+    column-gap: calc(var(--spacer) * 2);
+    color: var(--color-red);
+  }
+
+  .highlight-text {
+    color: var(--color-red);
+    font-size: calc(var(--spacer) * 2);
+    line-height: 19px;
+    font-weight: 700;
+  }
+
+  .highlight-image {
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .text {
+    color: var(--text-color-dark);
+    font-size: calc(var(--spacer) * 2);
+    line-height: 19px;
+    font-weight: 400;
+  }
+
+  .storie-btn {
+    @include btn(var(--color-blue-light));
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+    padding: 6px 12px;
+    max-width: 177px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: var(--spacer);
+  }
+}
