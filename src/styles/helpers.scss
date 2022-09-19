@@ -70,7 +70,7 @@
   text-align: center;
   &::before {
     content: "";
-    background: url(/img/icons/rhombus.png);
+    background: url('../img/icons/rhombus.png');
     background-repeat: no-repeat;
     display: block;
     height: 16px;
@@ -79,7 +79,7 @@
   }
   &::after {
     content: "";
-    background: url(/img/icons/rhombus.png);
+    background: url('../img/icons/rhombus.png');
     background-repeat: no-repeat;
     display: block;
     height: 16px;
