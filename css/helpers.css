@@ -39,7 +39,7 @@
   text-align: center; }
   .title-h2::before {
     content: "";
-    background: url(/img/icons/rhombus.png);
+    background: url("../img/icons/rhombus.png");
     background-repeat: no-repeat;
     display: block;
     height: 16px;
@@ -47,7 +47,7 @@
     margin-right: calc(var(--spacer) * 2); }
   .title-h2::after {
     content: "";
-    background: url(/img/icons/rhombus.png);
+    background: url("../img/icons/rhombus.png");
     background-repeat: no-repeat;
     display: block;
     height: 16px;
